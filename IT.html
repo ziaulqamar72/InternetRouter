@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Tenda1.png">
+    <title>Router</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+
+        .bton {
+            background-color: #FF642B;
+            color: #fff;
+            margin-top: 20px;
+            width: 200px;
+            padding-top: 5px;
+            border: none;
+            border-radius: 5px;
+            padding-bottom: 5px;
+            font-size: 16px;
+        }
+
+        .bton:hover {
+            cursor: pointer;
+            background-color: #dd3b00;
+            box-shadow: 1px 3px 7px #340700;
+            border: 1px solid #FF642B;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-color:#FF642B;color:#fff;text-align: center;">
+        <h1 style="padding:5px ;">Internet Routers</h1>
+    </div>
+    <div style="text-align: center;">
+        <button class="bton" onclick="ItOne()">IT Professional 1</button><br>
+        <button class="bton" onclick="ItDev()">IT Professional Dev</button>
+    </div>
+
+</body>
+
+
+<script>
+
+    function ItOne() {
+        let input = document.createElement('input');
+        input.setAttribute('type', 'text');
+        input.value = "Asd321Zxc";
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand("copy");
+        document.body.removeChild(input);
+        window.open('http://192.168.0.1/login.html', '_blank');
+    }
+    function ItDev() {
+
+        let input = document.createElement('input');
+        input.setAttribute('type', 'text');
+        input.value = "autonomysol123";
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand("copy");
+        document.body.removeChild(input);
+        window.open('http://192.168.1.1/login.html', '_blank');
+
+    }
+
+
+
+</script>
+
+</html>
